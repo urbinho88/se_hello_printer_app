@@ -4,7 +4,7 @@
 
 
 
-[![Build Status](https://app.statuscake.com/button/index.php?Track=TRACK_ID&Days=1&Design=1](6003182)
+[![Build Status](https://app.statuscake.com/button/index.php?Track=TRACK_ID&Days=1&Design=1)](https://app.statuscake.com/UptimeStatus.php?tid=6003182)
 
 
 Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
