@@ -8,3 +8,7 @@ script:
   - make lint
 after_success:
   - make docker_build
+deploy:
+  - provider: heroku
+  - app: salty-wave-26251
+  - api_key: ${HEROKU_API_KEY}
