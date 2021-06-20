@@ -6,6 +6,7 @@ lint:
 	flake8 hello_world test
 test:
 	PYTHONPATH=. py.test --verbose -s
+
 run:
 	PYTHONPATH=. FLASK_APP=hello_world flask run
 docker_build:
@@ -27,3 +28,8 @@ docker_push: docker_build
 
 test_smoke:
 	curl --fail 127.0.0.1:5000
+
+test_cov:
+	PYTHONPATH=. py.test --verbose -s --cov=hello_world
+test_xunit:
+	PYTHONPATH=. py.test -s --cov=. --cov-report xml --junit-xml=test_results.xml
